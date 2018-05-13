@@ -54,7 +54,7 @@
     centersArray = [[NSMutableArray alloc]init];
     
     
-    imagesArray = [Utils cropImageIntoNine:@"eye"];
+    imagesArray = [Utils cropImageIntoNine:@"puppy"];
     
     
     correctIndex = [[NSMutableDictionary alloc]init];
