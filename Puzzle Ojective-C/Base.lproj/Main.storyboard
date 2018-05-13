@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zjU-wM-fWC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bravo !!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldm-YN-tSt">
+                                <rect key="frame" x="20" y="581" width="335" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.26323784719999999" green="0.68158637150000001" blue="0.74734157990000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ng-Ps-IRW">
+                                <rect key="frame" x="20" y="530" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ldm-YN-tSt" secondAttribute="trailing" constant="20" id="6IW-qW-G5Z"/>
+                            <constraint firstItem="ldm-YN-tSt" firstAttribute="top" secondItem="8ng-Ps-IRW" secondAttribute="bottom" constant="30" id="f7Y-pD-GIq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ldm-YN-tSt" secondAttribute="bottom" constant="50" id="fhk-KK-dpL"/>
+                            <constraint firstItem="8ng-Ps-IRW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gMW-0n-qaL"/>
+                            <constraint firstItem="ldm-YN-tSt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mvG-Dx-txv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8ng-Ps-IRW" secondAttribute="trailing" constant="20" id="ncO-nY-1vk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bravoLabel" destination="ldm-YN-tSt" id="XYI-cB-zFS"/>
+                        <outlet property="timerLabel" destination="8ng-Ps-IRW" id="Qqt-yz-UDl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+        <!--Generic View Controller-->
+        <scene sceneID="x69-Xd-e7s">
+            <objects>
+                <viewController id="zjU-wM-fWC" customClass="GenericViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bFI-Gq-Pxy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8j-39-L7q">
+                                <rect key="frame" x="50" y="560" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bravo !!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YA0-fi-GTN">
+                                <rect key="frame" x="20" y="601" width="106" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puppy" translatesAutoresizingMaskIntoConstraints="NO" id="Bc5-qx-W6k">
+                                <rect key="frame" x="175" y="467" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="h99-G8-5hW"/>
+                                    <constraint firstAttribute="height" constant="200" id="s5D-m9-lBd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bc5-qx-W6k" firstAttribute="bottom" secondItem="VmQ-xJ-aFP" secondAttribute="bottom" id="Cy9-cV-GXZ"/>
+                            <constraint firstItem="YA0-fi-GTN" firstAttribute="leading" secondItem="VmQ-xJ-aFP" secondAttribute="leading" constant="20" id="OmJ-Qg-cfW"/>
+                            <constraint firstItem="VmQ-xJ-aFP" firstAttribute="trailing" secondItem="Bc5-qx-W6k" secondAttribute="trailing" id="R64-bK-LGA"/>
+                            <constraint firstItem="VmQ-xJ-aFP" firstAttribute="bottom" secondItem="YA0-fi-GTN" secondAttribute="bottom" constant="30" id="SWc-UM-jzp"/>
+                            <constraint firstItem="j8j-39-L7q" firstAttribute="leading" secondItem="VmQ-xJ-aFP" secondAttribute="leading" constant="50" id="ecn-Fv-R9j"/>
+                            <constraint firstItem="YA0-fi-GTN" firstAttribute="top" secondItem="j8j-39-L7q" secondAttribute="bottom" constant="20" id="poC-TG-nZJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VmQ-xJ-aFP"/>
+                    </view>
+                    <connections>
+                        <outlet property="bravoLabel" destination="YA0-fi-GTN" id="Idq-VR-CFd"/>
+                        <outlet property="timerLabel" destination="j8j-39-L7q" id="eVt-Br-adh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQE-xL-LUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="754"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="puppy" width="748" height="498"/>
+    </resources>
+</document>
